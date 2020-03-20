@@ -1,0 +1,18 @@
+int main() {
+  // Factorielle de N = N * (N-1) * (N-2) * (N-i) * ... * 1
+  int n = 5;
+  int factorielle = 0;
+  while (n>0){
+    if (factorielle >0)
+    {
+      factorielle = factorielle * n;
+      n=n-1;
+    }
+    else
+    {
+      factorielle = n;
+      n=n-1;
+    }
+}  
+    printf("La factorielle de %d est égale à %d\n", n, factorielle);
+    }
