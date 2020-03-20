@@ -1,0 +1,52 @@
+Installation node.js dans chocolatey
+ensuite installation de npm depuis cmd
+
+Lancer node.js en administrateur
+test npm avec "npm -v" depuis cmd
+installation de typescript: "npm install -g typescript"
+
+
+A refaire: installation package.json avec "npm install package.json" 
+C:\Windows\System32>npm install package.json
+npm WARN deprecated package.json@2.0.1: Use pkg.json instead.
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Windows\System32\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN notsup Unsupported engine for got@5.7.1: wanted: {"node":">=0.10.0 <7"} (current: {"node":"13.11.0","npm":"6.13.7"})
+npm WARN notsup Not compatible with your version of node/npm: got@5.7.1
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Windows\System32\package.json'
+npm WARN System32 No description
+npm WARN System32 No repository field.
+npm WARN System32 No README data
+npm WARN System32 No license field.
+
++ package.json@2.0.1
+added 74 packages from 36 contributors and audited 162 packages in 20.152s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+C:\Windows\System32>npm fund
+C:\Windows\System32
+`-- resolve@1.15.1
+  `-- url: https://github.com/sponsors/ljharb
+
+
+C:\Windows\System32>npm install package.json
+npm WARN deprecated package.json@2.0.1: Use pkg.json instead.
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Windows\System32\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Windows\System32\package.json'
+npm WARN System32 No description
+npm WARN System32 No repository field.
+npm WARN System32 No README data
+npm WARN System32 No license field.
+
++ package.json@2.0.1
+updated 1 package and audited 642 packages in 1.939s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
