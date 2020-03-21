@@ -1,3 +1,3 @@
-On voit sur sur fonction une boucle pour parcourir le tableau
+On voit sur code dans chaque fonction une boucle pour parcourir le tableau
 
-On pourrait penser factoriser cette fonction de parcours
+On pourrait factoriser cette fonction de parcours de tableau
