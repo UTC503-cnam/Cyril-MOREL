@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : S2_Ex_7.c
+ Name        : S2_Ex_7-boucle.c
  Author      : Cyril M
  Version     : 3
  Copyright   : Your copyright notice
