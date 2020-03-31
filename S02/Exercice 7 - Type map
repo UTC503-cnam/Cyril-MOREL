@@ -1,0 +1,49 @@
+/*
+ ============================================================================
+ Name        : S2_Ex_7.c
+ Author      : Cyril M
+ Version     : 1
+ Copyright   : Your copyright notice
+ Description : Reprise exercice après correction
+ ============================================================================
+ */
+
+#define N 5
+
+void mydouble(int v){
+  return v*2;
+}
+
+void map(int e[],int r[], int (*pointeurSurFonction)(int)){
+  for(int i=0;i<N;i++){
+      r[i]=pointeurSurFonction(e[i]);
+      }  
+
+int main(){
+  int e[N] = {1,5,2,4,3};
+  int r_double[N];
+  
+
+
+  //map(e,r_double, &mydouble);
+  printf("Le résultat: %d est égal à %d\n", /*e[N],*/ map(e,r_double, &mydouble));
+  /*mapDouble(e,r_double); // r_double contiendra {2,10,4,8,6}
+  for(int i=0;i<N;i++){
+    printf("Le double de %d est égal à %d\n", e[i], r_double[i]);
+  }
+  int r_triple[N];
+  mapTriple(e, r_triple);
+  for(int i=0;i<N;i++){
+    printf("Le triple de %d est égal à %d\n", e[i], r_triple[i]);
+  }
+  int r_square[N];
+  mapSquare (e,r_square);
+    for(int i=0;i<N;i++){
+    printf("Le carré de %d est égal à %d\n", e[i], r_square[i]);
+  }
+  int r_maximize3[N];
+  mapMaximize3(e,r_maximize3);
+  for(int i=0;i<N;i++){
+    printf("Le résultat: %d est égal à %d\n", e[i], r_maximize3[i]);*/
+  }
+//}

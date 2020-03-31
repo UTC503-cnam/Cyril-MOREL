@@ -1,0 +1,13 @@
+  int factorielle(int n) {
+    int i;
+    for (i=n-1;i>0;i--)
+    {
+      n=n*i;
+    }
+}
+
+int main() {
+  int n = 5;
+  //int factorielle = factorielle(n);
+    printf("La factorielle de %d est égale à %d\n", n, factorielle(n));
+    }

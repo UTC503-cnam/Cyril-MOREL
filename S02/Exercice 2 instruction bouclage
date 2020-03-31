@@ -1,3 +1,4 @@
+//Coder avec une boucle exécution avec 25 étapes
 int main() {
   // Factorielle de N = N * (N-1) * (N-2) * (N-i) * ... * 1
   int n = 5;
@@ -14,5 +15,31 @@ int main() {
       n=n-1;
     }
 }  
+    printf("La factorielle de %d est égale à %d\n", n, factorielle);
+    }
+
+
+//corection exécution avec 17 étapes
+int main() {
+  // Factorielle de N = N * (N – 1) * (N – 2) * (N – i) * … * 1
+  int n = 5;
+  int factorielle = 0;
+  factorielle = 1;
+  int i = n;
+  for(int i = 1; i <= n; i++)
+    factorielle = factorielle * i;
+    printf("La factorielle de %d est égale à %d\n", n, factorielle);
+    }
+
+
+//repris par moi  exécution avec 16 étapes
+int main() {
+  // Factorielle de N = N * (N – 1) * (N – 2) * (N – i) * … * 1
+  int n = 5;
+  int factorielle = 1;
+  //factorielle = 1;
+  int i = n;
+  for(int i = 1; i <= n; i++)
+    factorielle = factorielle * i;
     printf("La factorielle de %d est égale à %d\n", n, factorielle);
     }

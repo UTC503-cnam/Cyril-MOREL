@@ -68,3 +68,4 @@ int main(){
     printf("Le résultat: %d est égal à %d\n", e[i], r_maximize3[i]);
   }
 }
+// résultat: OK avec 108 étapes
