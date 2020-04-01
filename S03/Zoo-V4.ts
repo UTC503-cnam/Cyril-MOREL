@@ -13,6 +13,18 @@ class ZooAnimal {
         this.quantiteNourritureTotale = 0;
         this.bienNourri = false;
     }
+    // Accesseurs
+    getNom() {
+        return this.nom;
+        }  
+
+    setNom(nouveauNom: string) {
+        if (nouveauNom == null || nouveauNom.trim().length == 0) {
+        console.log("Erreur: le nouveau nom n'est pas correct");
+        return;
+        }
+        this.nom = nouveauNom;
+        }    
     // Méthodes
     nouvelleJournee() {
         this.quantiteNourritureTotale = 0;
@@ -34,22 +46,12 @@ class ZooAnimal {
         }
         return etat;
     }
-    get nom(){
-        return this.nom;
-    }
-    set nom(nouveauNom: string){
-        if(nouveauNom == null || nouveauNom.trim().length == 0){
-            console.log("Erreur: le nouveau nom n'est pas correct");
-            return;
-        }
-        this.nom = nouveauNom;
-    }
 }
 // Création d’instances de classes: objets
 let flipper = new ZooAnimal("Flipper", 30, 150);
+flipper.nom="Flipper Junior";
 let pandi = new ZooAnimal("Pandi", 10, 80);
 // Appels de méthodes sur les objets
-flipper.nom("Flipper Junior")
 flipper.nouvelleJournee();
 pandi.nouvelleJournee();
 flipper.recoitNourriture(10);

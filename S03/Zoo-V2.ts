@@ -1,10 +1,10 @@
 class ZooAnimal {
     // Attributs
-    nom: string;
-    age: number;
-    poids: number;
-    quantiteNourritureTotale: number;
-    bienNourri: boolean;
+    private nom: string;
+    private age: number;
+    private poids: number;
+    private quantiteNourritureTotale: number;
+    private bienNourri: boolean;
     // Constructeur
     constructor(nom: string, age: number, poids: number) {
         this.nom = nom;
