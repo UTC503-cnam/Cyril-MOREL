@@ -16,13 +16,11 @@ class CompteurAccess<T> {
         return this.compteur;
     }
 }
-
 let chaine = "La phrase à lire";
 let compteurAccesChaine = new CompteurAccess(chaine);
 
 let nombre = 1234;
 let compteurAccesNombre = new CompteurAccess(nombre);
-
 
 console.log(compteurAccesChaine.getX());
 console.log(compteurAccesChaine.getX());
