@@ -60,7 +60,7 @@ class MyFibonacciObserver implements FibonacciObserver {
         console.log(e);
     }
 
-    finished(n: number, value:number){
+    finished(n: number, value:number){ // pourquoi saisi à nouvea???
         console.log(`Finished! Fibonacci(${n}) = ${value}`);
     }
 }
