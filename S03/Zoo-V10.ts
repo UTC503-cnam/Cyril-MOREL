@@ -26,7 +26,6 @@ abstract class ZooAnimal {
         }
         this.nom = nouveauNom;
         }
-    
     // Méthodes
     nouvelleJournee() {
         this.quantiteNourritureTotale = 0;
@@ -69,7 +68,6 @@ abstract class ZooAnimal {
             calculBienNourri(){
                 return this.quantiteNourritureTotale > (this.poids / 4 - this.age/10);}
         }
-
 }
 // Création d’instances de classes: objets
 let flipper = new ZooDauphin("Flipper", 30, 150,"hareng");

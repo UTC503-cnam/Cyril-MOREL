@@ -16,8 +16,7 @@ class ZooAnimal {
     // Accesseurs
     getNom() {
         return this.nom;
-        }  
-
+        }
     setNom(nouveauNom: string) {
         if (nouveauNom == null || nouveauNom.trim().length == 0) {
         console.log("Erreur: le nouveau nom n'est pas correct");
@@ -25,7 +24,6 @@ class ZooAnimal {
         }
         this.nom = nouveauNom;
         }
-    
     // Méthodes
     nouvelleJournee() {
         this.quantiteNourritureTotale = 0;
@@ -39,7 +37,6 @@ class ZooAnimal {
             this.bienNourri = false;
         }
     }
-
     etatAlimentation() {
         let etat = this.nom + ", " + this.age + " ans, a reçu " +
             this.quantiteNourritureTotale + "Kg de nourriture."

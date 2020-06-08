@@ -1,4 +1,3 @@
-// Ne fonctionne pas car private à modifier
 abstract class ZooAnimal {
     // Attributs
     private nom: string;
@@ -17,7 +16,7 @@ abstract class ZooAnimal {
     // Accesseurs
     getNom() {
         return this.nom;
-        }  
+        }
 
     setNom(nouveauNom: string) {
         if (nouveauNom == null || nouveauNom.trim().length == 0) {
@@ -25,27 +24,27 @@ abstract class ZooAnimal {
         return;
         }
         this.nom = nouveauNom;
-        }
-    
+    }
+
     // Méthodes
     nouvelleJournee() {
         this.quantiteNourritureTotale = 0;
         this.bienNourri = false;
     }
-    /*recoitNourriture(quantite: number) {
+    recoitNourriture(quantite: number) {
         this.quantiteNourritureTotale += quantite;
         if (this.quantiteNourritureTotale > (this.poids / 5)) {
             this.bienNourri = true;
         } else {
             this.bienNourri = false;
         }
-    }*/
-    abstract calculBienNourri(){
-        recoitNourriture(quantite: number) {
+    }
+    abstract calculBienNourri()
+    
+    recoitNourriture(quantite: number) {
             this.quantiteNourritureTotale += quantite;
             this.bienNourri = this.calculBienNourri();
             }
-        }
 
     etatAlimentation() {
         let etat = this.nom + ", " + this.age + " ans, a reçu " + this.quantiteNourritureTotale + "Kg de nourriture."
@@ -89,7 +88,7 @@ pandi.nouvelleJournee();
 flipper.recoitNourriture(10);
 pandi.recoitNourriture(10);
 flipper.recoitNourriture(25);
-flipper.bienNourri=false;
+//flipper.bienNourri=false;
 console.log(flipper.etatAlimentation());
 console.log(pandi.etatAlimentation());
 console.log(oum.etatAlimentation());
